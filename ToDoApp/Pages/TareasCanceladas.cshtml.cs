@@ -7,18 +7,18 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ToDoAppRazor.Models;
 
-public class IndexModel : PageModel
+public class TareasCanceladasModel : PageModel
 {
     private readonly IWebHostEnvironment _webHostEnvironment;
-    private readonly ILogger<IndexModel> _logger;
+    private readonly ILogger<TareasCanceladasModel> _logger;
 
-    public IndexModel(IWebHostEnvironment webHostEnvironment, ILogger<IndexModel> logger)
+    public TareasCanceladasModel(IWebHostEnvironment webHostEnvironment, ILogger<TareasCanceladasModel> logger)
     {
         _webHostEnvironment = webHostEnvironment;
         _logger = logger;
     }
 
-    public List<Tarea> TareasPendientes { get; set; }
+    public List<Tarea> TareasCanceladas { get; set; }
     public string MensajeError { get; set; }
     public PaginacionInfo Paginacion { get; set; } = new PaginacionInfo();
 
@@ -36,19 +36,17 @@ public class IndexModel : PageModel
             Paginacion.TareasPorPagina = TareasPorPagina > 0 ? TareasPorPagina : 5;
 
             string rutaArchivo = Path.Combine(_webHostEnvironment.WebRootPath, "data", "tareas.json");
-            _logger.LogInformation($"Intentando cargar tareas desde: {rutaArchivo}");
-
             var dataTareas = TareasData.CargarDatos(rutaArchivo);
 
-            TareasPendientes = dataTareas.ObtenerTareasPendientesPaginadas(Paginacion);
+            TareasCanceladas = dataTareas.ObtenerTareasCanceladasPaginadas(Paginacion);
 
-            _logger.LogInformation($"Tareas cargadas exitosamente. Mostrando página {Paginacion.PaginaActual} de {Paginacion.TotalPaginas} (Total: {Paginacion.TotalTareas})");
+            _logger.LogInformation($"Tareas canceladas cargadas exitosamente. Mostrando página {Paginacion.PaginaActual} de {Paginacion.TotalPaginas} (Total: {Paginacion.TotalTareas})");
         }
         catch (Exception ex)
         {
-            _logger.LogError($"Error al cargar tareas: {ex.Message}");
+            _logger.LogError($"Error al cargar tareas canceladas: {ex.Message}");
             MensajeError = $"Error al cargar las tareas: {ex.Message}";
-            TareasPendientes = new List<Tarea>();
+            TareasCanceladas = new List<Tarea>();
         }
     }
 }

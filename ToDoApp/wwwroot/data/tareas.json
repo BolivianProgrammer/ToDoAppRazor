@@ -1,0 +1,184 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "nombre": "Diseñar interfaz de usuario para página de inicio",
+      "fechaExpiracion": "2025-08-25T18:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 2,
+      "nombre": "Implementar autenticación de usuarios",
+      "fechaExpiracion": "2025-08-30T14:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 3,
+      "nombre": "Optimizar consultas de base de datos",
+      "fechaExpiracion": "2025-08-22T10:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 4,
+      "nombre": "Crear documentación técnica",
+      "fechaExpiracion": "2025-09-05T16:30:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 5,
+      "nombre": "Reunión con equipo de desarrollo",
+      "fechaExpiracion": "2025-08-21T09:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 6,
+      "nombre": "Actualizar librerías de terceros",
+      "fechaExpiracion": "2025-09-10T12:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 7,
+      "nombre": "Realizar pruebas de rendimiento",
+      "fechaExpiracion": "2025-09-15T15:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 8,
+      "nombre": "Corregir errores de validación de formularios",
+      "fechaExpiracion": "2025-08-23T11:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 9,
+      "nombre": "Implementar funcionalidad de exportación de datos",
+      "fechaExpiracion": "2025-09-20T14:30:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 10,
+      "nombre": "Diseñar logo de la aplicación",
+      "fechaExpiracion": "2025-08-18T10:00:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 11,
+      "nombre": "Configurar entorno de desarrollo",
+      "fechaExpiracion": "2025-08-15T09:00:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 12,
+      "nombre": "Optimizar imágenes para el sitio web",
+      "fechaExpiracion": "2025-08-19T16:00:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 13,
+      "nombre": "Crear página de contacto",
+      "fechaExpiracion": "2025-09-25T12:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 14,
+      "nombre": "Implementar notificaciones por correo electrónico",
+      "fechaExpiracion": "2025-09-30T14:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 15,
+      "nombre": "Diseño preliminar de aplicación móvil",
+      "fechaExpiracion": "2025-08-10T10:00:00",
+      "estado": "Cancelada"
+    },
+    {
+      "id": 16,
+      "nombre": "Revisar seguridad de API",
+      "fechaExpiracion": "2025-09-02T11:30:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 17,
+      "nombre": "Crear manual de usuario",
+      "fechaExpiracion": "2025-09-28T17:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 18,
+      "nombre": "Integrar pasarela de pagos",
+      "fechaExpiracion": "2025-10-05T13:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 19,
+      "nombre": "Reunión con inversores",
+      "fechaExpiracion": "2025-08-17T09:30:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 20,
+      "nombre": "Actualizar política de privacidad",
+      "fechaExpiracion": "2025-08-24T15:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 21,
+      "nombre": "Implementar modo oscuro",
+      "fechaExpiracion": "2025-09-18T16:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 22,
+      "nombre": "Realizar pruebas de usabilidad",
+      "fechaExpiracion": "2025-09-12T10:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 23,
+      "nombre": "Migración de base de datos",
+      "fechaExpiracion": "2025-08-16T08:00:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 24,
+      "nombre": "Diseño de landing page para campaña",
+      "fechaExpiracion": "2025-08-09T14:30:00",
+      "estado": "Cancelada"
+    },
+    {
+      "id": 25,
+      "nombre": "Implementar sistema de búsqueda",
+      "fechaExpiracion": "2025-09-22T15:30:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 26,
+      "nombre": "Optimizar SEO del sitio web",
+      "fechaExpiracion": "2025-09-08T11:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 27,
+      "nombre": "Crear estrategia de marketing digital",
+      "fechaExpiracion": "2025-08-11T10:00:00",
+      "estado": "Cancelada"
+    },
+    {
+      "id": 28,
+      "nombre": "Implementar sistema de comentarios",
+      "fechaExpiracion": "2025-10-10T12:00:00",
+      "estado": "Pendiente"
+    },
+    {
+      "id": 29,
+      "nombre": "Actualizar documentación API",
+      "fechaExpiracion": "2025-08-14T16:00:00",
+      "estado": "Terminada"
+    },
+    {
+      "id": 30,
+      "nombre": "Realizar auditoría de código",
+      "fechaExpiracion": "2025-09-01T09:00:00",
+      "estado": "Pendiente"
+    }
+  ]
+}
