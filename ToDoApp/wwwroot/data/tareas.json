@@ -1,184 +1,196 @@
 {
   "tareas": [
     {
-      "id": 1,
-      "nombre": "Diseñar interfaz de usuario para página de inicio",
-      "fechaExpiracion": "2025-08-25T18:00:00",
-      "estado": "Pendiente"
+      "Id": 1,
+      "Nombre": "Dise\u00F1ar interfaz de usuario para p\u00E1gina de inicio",
+      "FechaExpiracion": "2025-08-25T18:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 2,
-      "nombre": "Implementar autenticación de usuarios",
-      "fechaExpiracion": "2025-08-30T14:00:00",
-      "estado": "Pendiente"
+      "Id": 2,
+      "Nombre": "Implementar autenticaci\u00F3n de usuarios",
+      "FechaExpiracion": "2025-08-30T14:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 3,
-      "nombre": "Optimizar consultas de base de datos",
-      "fechaExpiracion": "2025-08-22T10:00:00",
-      "estado": "Pendiente"
+      "Id": 3,
+      "Nombre": "Optimizar consultas de base de datos",
+      "FechaExpiracion": "2025-08-22T10:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 4,
-      "nombre": "Crear documentación técnica",
-      "fechaExpiracion": "2025-09-05T16:30:00",
-      "estado": "Pendiente"
+      "Id": 4,
+      "Nombre": "Crear documentaci\u00F3n t\u00E9cnica",
+      "FechaExpiracion": "2025-09-05T16:30:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 5,
-      "nombre": "Reunión con equipo de desarrollo",
-      "fechaExpiracion": "2025-08-21T09:00:00",
-      "estado": "Pendiente"
+      "Id": 5,
+      "Nombre": "Reuni\u00F3n con equipo de desarrollo",
+      "FechaExpiracion": "2025-08-21T09:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 6,
-      "nombre": "Actualizar librerías de terceros",
-      "fechaExpiracion": "2025-09-10T12:00:00",
-      "estado": "Pendiente"
+      "Id": 6,
+      "Nombre": "Actualizar librer\u00EDas de terceros",
+      "FechaExpiracion": "2025-09-10T12:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 7,
-      "nombre": "Realizar pruebas de rendimiento",
-      "fechaExpiracion": "2025-09-15T15:00:00",
-      "estado": "Pendiente"
+      "Id": 7,
+      "Nombre": "Realizar pruebas de rendimiento",
+      "FechaExpiracion": "2025-09-15T15:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 8,
-      "nombre": "Corregir errores de validación de formularios",
-      "fechaExpiracion": "2025-08-23T11:00:00",
-      "estado": "Pendiente"
+      "Id": 8,
+      "Nombre": "Corregir errores de validaci\u00F3n de formularios",
+      "FechaExpiracion": "2025-08-23T11:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 9,
-      "nombre": "Implementar funcionalidad de exportación de datos",
-      "fechaExpiracion": "2025-09-20T14:30:00",
-      "estado": "Pendiente"
+      "Id": 9,
+      "Nombre": "Implementar funcionalidad de exportaci\u00F3n de datos",
+      "FechaExpiracion": "2025-09-20T14:30:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 10,
-      "nombre": "Diseñar logo de la aplicación",
-      "fechaExpiracion": "2025-08-18T10:00:00",
-      "estado": "Terminada"
+      "Id": 10,
+      "Nombre": "Dise\u00F1ar logo de la aplicaci\u00F3n",
+      "FechaExpiracion": "2025-08-18T10:00:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 11,
-      "nombre": "Configurar entorno de desarrollo",
-      "fechaExpiracion": "2025-08-15T09:00:00",
-      "estado": "Terminada"
+      "Id": 11,
+      "Nombre": "Configurar entorno de desarrollo",
+      "FechaExpiracion": "2025-08-15T09:00:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 12,
-      "nombre": "Optimizar imágenes para el sitio web",
-      "fechaExpiracion": "2025-08-19T16:00:00",
-      "estado": "Terminada"
+      "Id": 12,
+      "Nombre": "Optimizar im\u00E1genes para el sitio web",
+      "FechaExpiracion": "2025-08-19T16:00:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 13,
-      "nombre": "Crear página de contacto",
-      "fechaExpiracion": "2025-09-25T12:00:00",
-      "estado": "Pendiente"
+      "Id": 13,
+      "Nombre": "Crear p\u00E1gina de contacto",
+      "FechaExpiracion": "2025-09-25T12:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 14,
-      "nombre": "Implementar notificaciones por correo electrónico",
-      "fechaExpiracion": "2025-09-30T14:00:00",
-      "estado": "Pendiente"
+      "Id": 14,
+      "Nombre": "Implementar notificaciones por correo electr\u00F3nico",
+      "FechaExpiracion": "2025-09-30T14:00:00",
+      "Estado": "Pendiente"
     },
     {
-      "id": 15,
-      "nombre": "Diseño preliminar de aplicación móvil",
-      "fechaExpiracion": "2025-08-10T10:00:00",
-      "estado": "Cancelada"
+      "Id": 15,
+      "Nombre": "Dise\u00F1o preliminar de aplicaci\u00F3n m\u00F3vil",
+      "FechaExpiracion": "2025-08-10T10:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 16,
-      "nombre": "Revisar seguridad de API",
-      "fechaExpiracion": "2025-09-02T11:30:00",
-      "estado": "Pendiente"
+      "Id": 16,
+      "Nombre": "Revisar seguridad de API",
+      "FechaExpiracion": "2025-09-02T11:30:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 17,
-      "nombre": "Crear manual de usuario",
-      "fechaExpiracion": "2025-09-28T17:00:00",
-      "estado": "Pendiente"
+      "Id": 17,
+      "Nombre": "Crear manual de usuario",
+      "FechaExpiracion": "2025-09-28T17:00:00",
+      "Estado": "Pendiente"
     },
     {
-      "id": 18,
-      "nombre": "Integrar pasarela de pagos",
-      "fechaExpiracion": "2025-10-05T13:00:00",
-      "estado": "Pendiente"
+      "Id": 18,
+      "Nombre": "Integrar pasarela de pagos",
+      "FechaExpiracion": "2025-10-05T13:00:00",
+      "Estado": "Pendiente"
     },
     {
-      "id": 19,
-      "nombre": "Reunión con inversores",
-      "fechaExpiracion": "2025-08-17T09:30:00",
-      "estado": "Terminada"
+      "Id": 19,
+      "Nombre": "Reuni\u00F3n con inversores",
+      "FechaExpiracion": "2025-08-17T09:30:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 20,
-      "nombre": "Actualizar política de privacidad",
-      "fechaExpiracion": "2025-08-24T15:00:00",
-      "estado": "Pendiente"
+      "Id": 20,
+      "Nombre": "Actualizar pol\u00EDtica de privacidad",
+      "FechaExpiracion": "2025-08-24T15:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 21,
-      "nombre": "Implementar modo oscuro",
-      "fechaExpiracion": "2025-09-18T16:00:00",
-      "estado": "Pendiente"
+      "Id": 21,
+      "Nombre": "Implementar modo oscuro",
+      "FechaExpiracion": "2025-09-18T16:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 22,
-      "nombre": "Realizar pruebas de usabilidad",
-      "fechaExpiracion": "2025-09-12T10:00:00",
-      "estado": "Pendiente"
+      "Id": 22,
+      "Nombre": "Realizar pruebas de usabilidad",
+      "FechaExpiracion": "2025-09-12T10:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 23,
-      "nombre": "Migración de base de datos",
-      "fechaExpiracion": "2025-08-16T08:00:00",
-      "estado": "Terminada"
+      "Id": 23,
+      "Nombre": "Migraci\u00F3n de base de datos",
+      "FechaExpiracion": "2025-08-16T08:00:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 24,
-      "nombre": "Diseño de landing page para campaña",
-      "fechaExpiracion": "2025-08-09T14:30:00",
-      "estado": "Cancelada"
+      "Id": 24,
+      "Nombre": "Dise\u00F1o de landing page para campa\u00F1a",
+      "FechaExpiracion": "2025-08-09T14:30:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 25,
-      "nombre": "Implementar sistema de búsqueda",
-      "fechaExpiracion": "2025-09-22T15:30:00",
-      "estado": "Pendiente"
+      "Id": 25,
+      "Nombre": "Implementar sistema de b\u00FAsqueda",
+      "FechaExpiracion": "2025-09-22T15:30:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 26,
-      "nombre": "Optimizar SEO del sitio web",
-      "fechaExpiracion": "2025-09-08T11:00:00",
-      "estado": "Pendiente"
+      "Id": 26,
+      "Nombre": "Optimizar SEO del sitio web",
+      "FechaExpiracion": "2025-09-08T11:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 27,
-      "nombre": "Crear estrategia de marketing digital",
-      "fechaExpiracion": "2025-08-11T10:00:00",
-      "estado": "Cancelada"
+      "Id": 27,
+      "Nombre": "Crear estrategia de marketing digital",
+      "FechaExpiracion": "2025-08-11T10:00:00",
+      "Estado": "Cancelada"
     },
     {
-      "id": 28,
-      "nombre": "Implementar sistema de comentarios",
-      "fechaExpiracion": "2025-10-10T12:00:00",
-      "estado": "Pendiente"
+      "Id": 28,
+      "Nombre": "Implementar sistema de comentarios",
+      "FechaExpiracion": "2025-10-10T12:00:00",
+      "Estado": "Pendiente"
     },
     {
-      "id": 29,
-      "nombre": "Actualizar documentación API",
-      "fechaExpiracion": "2025-08-14T16:00:00",
-      "estado": "Terminada"
+      "Id": 29,
+      "Nombre": "Actualizar documentaci\u00F3n API",
+      "FechaExpiracion": "2025-08-14T16:00:00",
+      "Estado": "Terminada"
     },
     {
-      "id": 30,
-      "nombre": "Realizar auditoría de código",
-      "fechaExpiracion": "2025-09-01T09:00:00",
-      "estado": "Pendiente"
+      "Id": 30,
+      "Nombre": "Realizar auditor\u00EDa de c\u00F3digo",
+      "FechaExpiracion": "2025-09-01T09:00:00",
+      "Estado": "Cancelada"
+    },
+    {
+      "Id": 31,
+      "Nombre": "hola q tal",
+      "FechaExpiracion": "2025-08-21T00:00:00",
+      "Estado": "Cancelada"
+    },
+    {
+      "Id": 32,
+      "Nombre": "me gusta el fubol",
+      "FechaExpiracion": "0001-01-01T00:00:00",
+      "Estado": "Cancelada"
     }
   ]
 }

@@ -8,11 +8,46 @@
     <h1><i class="fas fa-tasks me-2"></i>Tareas Pendientes</h1>
 
     <div class="d-flex justify-content-end mb-3">
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearTareaModal">
             <i class="fas fa-plus"></i> Nueva Tarea
         </button>
     </div>
 
+    <div class="modal fade" id="crearTareaModal" tabindex="-1" aria-labelledby="crearTareaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" asp-page-handler="CrearTarea">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="crearTareaModalLabel">Crear Nueva Tarea</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nombreTarea" class="form-label">Nombre de la tarea</label>
+                            <input type="text" class="form-control" id="nombreTarea" name="Nombre" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaExpiracion" class="form-label">Fecha de vencimiento</label>
+                            <input type="date" class="form-control" id="fechaExpiracion" name="FechaExpiracion" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @if (TempData["MensajeExito"] != null)
+    {
+        <div class="alert alert-success">@TempData["MensajeExito"]</div>
+    }
+    @if (TempData["MensajeError"] != null)
+    {
+        <div class="alert alert-danger">@TempData["MensajeError"]</div>
+    }
     @if (!string.IsNullOrEmpty(Model.MensajeError))
     {
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -25,6 +60,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>N°</th>
                     <th>Nombre Tarea</th>
                     <th>Fecha Vencimiento</th>
                     <th>Estado</th>
@@ -34,16 +70,23 @@
             <tbody>
                 @if (Model.TareasPendientes != null && Model.TareasPendientes.Any())
                 {
-                    @foreach (var tarea in Model.TareasPendientes)
+                    int numeracion = Model.Paginacion.IndiceInicial;
+                    foreach (var tarea in Model.TareasPendientes)
                     {
+                        numeracion++;
                         <tr>
+                            <td>@numeracion</td>
                             <td>@tarea.Nombre</td>
                             <td>@tarea.FechaFormateada()</td>
                             <td><span class="badge @tarea.BadgeClass()">@tarea.Estado</span></td>
                             <td class="text-end">
                                 <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
                                 <button class="btn btn-sm btn-outline-success"><i class="fas fa-check"></i></button>
-                                <button class="btn btn-sm btn-danger"><i class="fas fa-ban"></i></button>
+                                <form method="post" asp-page-handler="Cancelar" asp-route-id="@tarea.Id" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-danger" title="Cancelar tarea">
+                                        <i class="fas fa-ban"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     }
@@ -51,7 +94,7 @@
                 else
                 {
                     <tr>
-                        <td colspan="4" class="text-center py-3">
+                        <td colspan="5" class="text-center py-3">
                             <div class="d-flex flex-column align-items-center">
                                 <i class="fas fa-check-circle fa-2x text-success mb-2"></i>
                                 <p class="m-0">¡No hay tareas pendientes! Todo está al día.</p>

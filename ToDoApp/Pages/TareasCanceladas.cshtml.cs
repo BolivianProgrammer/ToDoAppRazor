@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ToDoAppRazor.Models;
+using System.Text.Json;
 
 public class TareasCanceladasModel : PageModel
 {
@@ -30,6 +32,33 @@ public class TareasCanceladasModel : PageModel
 
     public void OnGet()
     {
+        CargarTareas();
+    }
+
+    public IActionResult OnPostRehacer(int id)
+    {
+        try
+        {
+            string rutaArchivo = Path.Combine(_webHostEnvironment.WebRootPath, "data", "tareas.json");
+            var dataTareas = TareasData.CargarDatos(rutaArchivo);
+
+            var tarea = dataTareas.Tareas.FirstOrDefault(t => t.Id == id);
+            if (tarea != null)
+            {
+                tarea.Estado = "Pendiente";
+                var wrapper = new { tareas = dataTareas.Tareas };
+                System.IO.File.WriteAllText(rutaArchivo, JsonSerializer.Serialize(wrapper, new JsonSerializerOptions { WriteIndented = true }));
+            }
+        }
+        catch (Exception ex)
+        {
+            MensajeError = $"Error al rehacer la tarea: {ex.Message}";
+        }
+        return RedirectToPage();
+    }
+
+    private void CargarTareas()
+    {
         try
         {
             Paginacion.PaginaActual = PaginaActual > 0 ? PaginaActual : 1;
@@ -39,12 +68,9 @@ public class TareasCanceladasModel : PageModel
             var dataTareas = TareasData.CargarDatos(rutaArchivo);
 
             TareasCanceladas = dataTareas.ObtenerTareasCanceladasPaginadas(Paginacion);
-
-            _logger.LogInformation($"Tareas canceladas cargadas exitosamente. Mostrando página {Paginacion.PaginaActual} de {Paginacion.TotalPaginas} (Total: {Paginacion.TotalTareas})");
         }
         catch (Exception ex)
         {
-            _logger.LogError($"Error al cargar tareas canceladas: {ex.Message}");
             MensajeError = $"Error al cargar las tareas: {ex.Message}";
             TareasCanceladas = new List<Tarea>();
         }

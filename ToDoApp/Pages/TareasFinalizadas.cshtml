@@ -19,6 +19,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>N°</th>
                     <th>Nombre Tarea</th>
                     <th>Fecha Vencimiento</th>
                     <th>Estado</th>
@@ -28,9 +29,12 @@
             <tbody>
                 @if (Model.TareasTerminadas != null && Model.TareasTerminadas.Any())
                 {
+                    int numeracion = Model.Paginacion.IndiceInicial;
                     @foreach (var tarea in Model.TareasTerminadas)
                     {
+                        numeracion++;
                         <tr>
+                            <td>@numeracion</td>
                             <td>@tarea.Nombre</td>
                             <td>@tarea.FechaFormateada()</td>
                             <td><span class="badge @tarea.BadgeClass()">@tarea.Estado</span></td>

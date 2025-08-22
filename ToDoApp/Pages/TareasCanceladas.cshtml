@@ -19,6 +19,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>N°</th>
                     <th>Nombre Tarea</th>
                     <th>Fecha Vencimiento</th>
                     <th>Estado</th>
@@ -28,14 +29,22 @@
             <tbody>
                 @if (Model.TareasCanceladas != null && Model.TareasCanceladas.Any())
                 {
+                    int numeracion = Model.Paginacion.IndiceInicial;
                     @foreach (var tarea in Model.TareasCanceladas)
                     {
+                        numeracion++;
                         <tr>
+                            <td>@numeracion</td>
                             <td>@tarea.Nombre</td>
                             <td>@tarea.FechaFormateada()</td>
                             <td><span class="badge @tarea.BadgeClass()">@tarea.Estado</span></td>
                             <td class="text-end">
-                                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-redo"></i></button>
+                                <form method="post" asp-page-handler="Rehacer" asp-route-id="@tarea.Id" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-outline-primary" title="Rehacer tarea">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                </form>
+
                                 <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
                             </td>
                         </tr>
